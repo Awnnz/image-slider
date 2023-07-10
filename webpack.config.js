@@ -19,13 +19,13 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
-        generator: {
-          filename: 'images/[hash][ext][query]'
-        }
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
+        generator: {
+          filename: 'images/[hash][ext][query]'
+        }
       },
     ],
   },
