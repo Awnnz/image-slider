@@ -7,11 +7,7 @@ module.exports = {
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
-    clean: true,
-  },
-  devtool: "inline-source-map",
-  devServer: {
-    static: "./dist",
+    clean: true
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -23,11 +19,18 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+        generator: {
+          filename: 'images/[hash][ext][query]'
+        }
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
     ],
+  },
+  devtool: "inline-source-map",
+  devServer: {
+    static: "./dist",
   },
 };

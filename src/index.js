@@ -1,5 +1,12 @@
-import test from "./print";
 import "./style.css";
+import img1 from './images/slide-img1.jpg';
+import img2 from './images/slide-img1.jpg';
+import img3 from './images/slide-img1.jpg';
+import img4 from './images/slide-img1.jpg';
+import img5 from './images/slide-img1.jpg';
 
-console.log("s");
-test();
+function slider (ImageArr) {
+    const img = img2;
+};
+
+
