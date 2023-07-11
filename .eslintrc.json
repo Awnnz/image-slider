@@ -12,6 +12,8 @@
     "quotes": 0,
     "no-console": "off",
     "no-unused-vars": "warn",
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "prefer-arrow-callback": "off",
+    "no-use-before-define": "off"
   }
 }

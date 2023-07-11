@@ -83,7 +83,11 @@ img {
   /* background-color: blue; */
 }
 
-.slide-indicators button:focus {
+/* .slide-indicators button:focus {
+  background-color: red;
+} */
+
+button.focused {
   background-color: red;
 }
 
