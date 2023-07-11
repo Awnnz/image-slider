@@ -37,6 +37,11 @@ img {
   width: 100%;
   top: 0;
   left: 0;
+  transform: translate(100%, 0);
+}
+
+.current-slide{
+  transform: translate(0, 0);
 }
 
 .slide-indicators {
@@ -60,6 +65,10 @@ img {
   cursor: pointer;
   position: relative;
   outline: none;
+}
+
+.slide img {
+  object-fit: cover;
 }
 
 .slide-indicators button::after{
@@ -118,8 +127,8 @@ img {
   transform: translate(100%);
 } */
 
-/* .slides-wrapper {
+.slides-wrapper {
   overflow: hidden;
-} */
+}
 
 
